@@ -16,7 +16,7 @@ var kvadrat = function(a,b){
 var logorifm = function(a){
 	console.log(Math.log(a));
 }
-var sinus = function(a){
+var sinus = function(a){ 
 	console.log(Math.sin(a));
 }
 var cosinus = function(a){
