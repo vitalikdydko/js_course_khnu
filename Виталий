@@ -1,0 +1,69 @@
+var dilennya = function(a, b) {
+	return a / b;
+};
+var plus = function(a, b) {
+	return a + b;
+};
+var minus = function(a, b) {
+	return a - b;
+};
+var mnogenya = function(a,b) {
+	return a * b;
+};
+var kvadrat = function(a,b){
+	console.log(Math.pow(a, b));
+}
+var logorifm = function(a){
+	console.log(Math.log(a));
+}
+var sinus = function(a){
+	console.log(Math.sin(a));
+}
+var cosinus = function(a){
+	console.log(Math.cos(a));
+}
+var korin = function(a){
+	console.log(Math.sqrt(a));
+}
+var func = function(a, action, b) {
+	if(action === '+') {
+		return plus(a, b);
+	}
+
+	if(action === '-') {
+		return minus(a, b);
+	}
+
+	if(action === '/') {
+		return dilennya(a, b);
+	}
+
+	if(action === '*') {
+		return mnogenya(a, b);
+	}
+	if(action === 'pow') {
+		return kvadrat(a,b);
+	}
+	if(action === 'log') {
+		return logorifm(a);
+	}
+	if(action === 'sin') {
+		return sinus(a);
+	}
+	if(action === 'cos') {
+		return cosinus(a);
+	}
+	if(action === 'sqrt') {
+		return korin(a);
+	}
+};
+
+console.log(func(2, '+', 5));
+console.log(func(3, '-', 5));
+console.log(func(10, '/', 2));
+console.log(func(7, '*', 4));
+console.log(func(3, 'pow',2));
+console.log(func(4, 'log'));
+console.log(func(8, 'sin'));
+console.log(func(2, 'cos'));
+console.log(func(25, 'sqrt'));
