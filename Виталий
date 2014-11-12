@@ -11,19 +11,19 @@ var mnogenya = function(a,b) {
 	return a * b;
 };
 var kvadrat = function(a,b){
-	console.log(Math.pow(a, b));
+	return Math.pow(a, b);
 }
 var logorifm = function(a){
-	console.log(Math.log(a));
+	return Math.log(a);
 }
-var sinus = function(a){ 
-	console.log(Math.sin(a));
+var sinus = function(a){
+	return Math.sin(a);
 }
 var cosinus = function(a){
-	console.log(Math.cos(a));
+	return Math.cos(a);
 }
 var korin = function(a){
-	console.log(Math.sqrt(a));
+	return Math.sqrt(a);
 }
 var func = function(a, action, b) {
 	if(action === '+') {
